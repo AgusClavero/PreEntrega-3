@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se linkea el archivo css de estilos -->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Contacto</title>
+
+    <!-- Cambio de color de fondo de la pagina -->
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    
+</head>
+<body class="body-contacto">
+
+    <!-- Formulario de contacto -->
+    <form class="formulario-contacto" action="/submit" method="post">  <!-- Etiqueta contenedora -->
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+
+        <label for="dni">Documento:</label>
+        <input type="text" name="dni" id="dni">
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+
+        <label for="telefono">Telefono de Contacto:</label>
+        <input type="text" name="telefono" id="telefono">
+
+        <label for="observaciones">Observaciones:</label>
+        <input type="text" name="observaciones" id="observaciones">
+
+    </form>
+
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Enviar</button>
+      </div>
+
+    <!-- Otras lineas de contacto -->
+    <h3 id="h3-mail">Mail de contacto</h3>
+
+    <p id="p-mail">agustinclavero97@hotmail.com</p>
+
+    <h3 id="h3-telefono">Telefonos</h3>
+
+    <p id="p-telefono">+54 294 4436842</p>
+
+    <h3 id="h3-direccion">Dirección</h3>
+
+    <p id="p-direccion">Av. Bustillo 15236, San Carlos de Bariloche, Rio Negro</p>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Se linkea el archivo css de estilos -->
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Reservas</title>
+    
+    <!-- Cambio de color de fondo de la pagina -->
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+
+        <img src="../img/Logo.png" alt="Logo Hotel">
+
+        <!-- Formulario de reserva -->
+        <form class="formulario" action="/submit" method="post">
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="dni">Documento:</label>
+            <input type="text" name="dni" id="dni">
+
+            <label for="fecha-entrada">Fecha Entrada:</label>
+            <input type="date" name="fecha-entrada" id="fecha-entrada">
+
+            <label for="fecha-salida">Fecha Salida:</label>
+            <input type="date" name="fecha-salida" id="fecha-salida">
+
+            <label for="observaciones">Observaciones:</label>
+            <input type="text" name="observaciones" id="observaciones">
+
+        </form>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Enviar</button>
+          </div>
+    </header>
+</body>
+</html>
