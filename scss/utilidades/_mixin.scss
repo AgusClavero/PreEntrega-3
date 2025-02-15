@@ -1,0 +1,27 @@
+// mixin sin parametros
+// titulos h2 index y nosotros
+
+@mixin estilo-h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(73, 74, 75);
+}
+
+@mixin estilo-h3{
+    text-align: right;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+@mixin parrafo-cont{
+    text-align: right;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}

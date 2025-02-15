@@ -1,0 +1,54 @@
+ /* Estilos para Desktop Reservas */ 
+
+ @media screen and (min-width: 1024px){
+    .formulario{
+        width: 30%;
+    }
+
+/* Estilos para Desktop Index */
+ul{
+    list-style: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 24px;
+}
+#h2-index{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(73, 74, 75);
+}
+}
+
+/* Estilo para Desktop Contacto */
+
+.formulario-contacto{
+    width: 40%;
+    padding: 15px;
+    margin: 10px;
+    font-size: 30px;
+}
+
+#h3-direccion, #h3-telefono, #h3-mail{
+    font-size: 30px;
+}
+
+#p-mail, #p-telefono, #p-direccion{
+    font-size: 20px;
+}
+/* Estilos para Desktop Galeria */
+
+.main-galeria{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 0fr;
+}
+/* Estilos para Desktop Nosotros */
+
+.div-nosotros{
+    display: flex;
+    grid-template-columns: 50% 50%;
+    .p-nosotros{
+        text-align: center;
+    }
+}

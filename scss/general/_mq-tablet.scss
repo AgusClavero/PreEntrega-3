@@ -1,0 +1,55 @@
+/* Estilos para tablet Index */
+
+@media screen and (min-width: 600px){
+    .header-index{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    } 
+    .main-index{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 1fr;
+        gap: 1rem;
+    }
+
+/*Estilos para tablet Reservas*/
+
+    .formulario{
+        width: 50%;
+    }
+
+
+/* Estilos para tablet Nosotros */
+
+.p-nosotros{
+    text-align: center;
+}
+
+/*Estilo para tablet Galeria */
+
+.main-galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 30% 70%;
+    .img-tres{
+        grid-column: span 2;
+    }
+}
+
+/* Estilos para tablet Contacto */
+
+.formulario-contacto {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+  }
+  #h3-direccion, #h3-telefono, #h3-mail {
+    font-size: 25px;
+  }
+  
+  #p-mail, #p-telefono, #p-direccion {
+    font-size: 15px;
+  }
+}

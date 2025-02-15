@@ -1,0 +1,14 @@
+// import de reset
+
+@use "general/reset";
+
+//import de home
+@use "general/home";
+
+//import de desktop
+@use "general/mq-desktop";
+
+//import de tablet
+@use "general/mq-tablet";
+
+

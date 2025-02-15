@@ -1,207 +1,233 @@
+@charset "UTF-8";
 /* Reset */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* FlexBox en botones principales */
-.menu-principal{
-    display: flex;  /*Activa flexbox*/
-    flex-direction: row;
-    gap: 1rem;
-    padding: 5px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+.menu-principal {
+  display: flex; /*Activa flexbox*/
+  flex-direction: row;
+  gap: 1rem;
+  padding: 5px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.opciones{
-    
-    border: 2px solid black;
-    background-color: rgb(226, 215, 215);
+.opciones {
+  border: 2px solid black;
+  background-color: rgb(226, 215, 215);
 }
 
-/* Estilo de los botones */
-ul{
-    list-style: none;
-    text-transform: uppercase;
-    color: black;
-    font-size: 16px;
+/* Estilo párrafo descriptivo */
+#p-index {
+  padding: 10px;
+  text-align: left;
+  font-style: italic;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
-/* Estilo titulo secundario */
-#h2-index{
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    color: rgb(73, 74, 75);
-}
-
-/* Estilo parrafo descriptivo */
-#p-index{
-    padding: 10px;
-    text-align: left;
-    font-style: italic;
-}
-
-/* Estilo Pie de pagina */
-#footer-index{
-    text-align: center;
-    font-size: 14px;
-    background-color: black;
-    color: white;
-}
-
-/* Estilo de formulario de reservas */
-.formulario{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    padding: 5px;
-    margin: 5px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.formulario label{
-    margin: 10px;
-}
-
-.formulario input{
-    padding: 0px;
-}
-
-/* Estilo de titulo de Nosotros */
-#h2-nosotros{
-    text-align: center;
-    font-size: 30px;
-    text-transform: uppercase;
-    color: rgb(73, 74, 75);
+/* Estilo Pie de paginas*/
+#footer-index {
+  text-align: center;
+  font-size: 14px;
+  background-color: black;
+  color: white;
 }
 
 /* Estilo parrafos de Nosotros */
-.p-nosotros{
-    width: 50%;
-    height: 30%;
-    font-size: 20px;
-    font-style: italic;
-    background-color: white;
+.p-nosotros {
+  width: 100%;
+  height: 30%;
+  font-size: 20px;
+  font-style: italic;
+  background-color: white;
+}
+
+/* Estilo de formulario de reservas */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.formulario label {
+  margin: 10px;
+}
+.formulario input {
+  padding: 0px;
+}
+
+.body-contacto {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Estilo titulo secundario */
+/* Estilo de titulo de Nosotros */
+#h2-index {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(73, 74, 75);
+}
+
+#h2-nosotros {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(73, 74, 75);
 }
 
 /* Estilo de titulo Galeria */
-#h2-galeria{
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    background-color: rgb(245, 221, 221);
-    /*font-size: 30px;*/
-    color: rgb(73, 74, 75);
+#h2-galeria {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(73, 74, 75);
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgb(226, 215, 215);
 }
 
-.body-contacto{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+/* Estilos de otras lineas de contacto */
+/* Estilo titulo direccion */
+/* Estilo titulo telefono */
+/* Estilo titulo mail */
+#h3-direccion, #h3-telefono, #h3-mail {
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
-/* Estilo de formulario de contacto */
-.formulario-contacto{
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    padding: 5px;
-    margin: 5px;
-    font-size: 20px;
-    font-weight: bold;
+#p-mail, #p-telefono, #p-direccion {
+  text-align: right;
+  font-size: 15px;
+  padding-bottom: 15px;
 }
 
-
-/* Estilo de otras lineas de contacto */
-#h3-mail{
-    text-align: right;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 5px;
+nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
-#p-mail{
-    text-align: right;
-    font-size: 15px;
-    padding-bottom: 15px;
-}
-
-#h3-telefono{
-    text-align: right;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-}
-
-#p-telefono{
-    text-align: right;
-    font-size: 15px;
-    padding-bottom: 15px;
-}
-
-#h3-direccion{
-    text-align: right;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 5px;
-}
-
-#p-direccion{
-    text-align: right;
-    font-size: 15px;
-}
-
-
-/* Estilos para tablet index */
-
-@media screen and (min-width: 600px){
-    .header-index{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    } 
-    .main-index{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 1fr;
-        gap: 1rem;
-    }
-
-    /*Estilos para tablet Reservas*/
-
-    .formulario{
-        width: 50%;
-    }
-
-}
- /* Estilos para PC escritorio reservas */ 
-
-@media screen and (min-width: 1024px){
-    .formulario{
-        width: 30%;
-    }
-
-/* Estilos para PC escritorio index */
-ul{
+/* Estilos para Desktop Reservas */
+@media screen and (min-width: 1024px) {
+  .formulario {
+    width: 30%;
+  }
+  /* Estilos para Desktop Index */
+  ul {
     list-style: none;
     text-transform: uppercase;
     color: black;
     font-size: 24px;
-}
-#h2-index{
+  }
+  #h2-index {
     text-align: center;
     padding: 10px;
     font-size: 20px;
     color: rgb(73, 74, 75);
+  }
 }
+/* Estilo para Desktop Contacto */
+.formulario-contacto {
+  width: 40%;
+  padding: 15px;
+  margin: 10px;
+  font-size: 30px;
 }
+
+#h3-direccion, #h3-telefono, #h3-mail {
+  font-size: 30px;
+}
+
+#p-mail, #p-telefono, #p-direccion {
+  font-size: 20px;
+}
+
+/* Estilos para Desktop Galeria */
+.main-galeria {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 0fr;
+}
+
+/* Estilos para Desktop Nosotros */
+.div-nosotros {
+  display: flex;
+  grid-template-columns: 50% 50%;
+}
+.div-nosotros .p-nosotros {
+  text-align: center;
+}
+
+/* Estilos para tablet Index */
+@media screen and (min-width: 600px) {
+  .header-index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-index {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+  }
+  /*Estilos para tablet Reservas*/
+  .formulario {
+    width: 50%;
+  }
+  /* Estilos para tablet Nosotros */
+  .p-nosotros {
+    text-align: center;
+  }
+  /*Estilo para tablet Galeria */
+  .main-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 30% 70%;
+  }
+  .main-galeria .img-tres {
+    grid-column: span 2;
+  }
+  /* Estilos para tablet Contacto */
+  .formulario-contacto {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 25px;
+  }
+  #h3-direccion, #h3-telefono, #h3-mail {
+    font-size: 25px;
+  }
+  #p-mail, #p-telefono, #p-direccion {
+    font-size: 15px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

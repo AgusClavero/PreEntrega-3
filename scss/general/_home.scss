@@ -1,0 +1,134 @@
+
+// import variables
+@use "../utilidades/variables";
+// import mixin
+@use "../utilidades/mixin";
+
+
+/* FlexBox en botones principales */
+
+.menu-principal{
+    display: flex;  /*Activa flexbox*/
+    flex-direction: row;
+    gap: 1rem;
+    padding: 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.opciones{
+    
+    border: 2px solid black;
+    background-color: rgb(226, 215, 215);
+}
+
+/* Estilo párrafo descriptivo */
+
+#p-index{
+    padding: 10px;
+    text-align: left;
+    font-style: italic;
+}
+
+/* Estilo Pie de paginas*/
+#footer-index{
+    text-align: center;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+}
+
+/* Estilo parrafos de Nosotros */
+.p-nosotros{
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    font-style: italic;
+    background-color: white;
+}
+
+/* Estilo de formulario de reservas */
+.formulario{
+    @include mixin.flex-column;
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    label{
+        margin: 10px;
+    }
+    input{
+        padding: 0px
+    }
+}
+
+.body-contacto{
+    @include mixin.flex-column;
+    padding: 5px;
+}
+
+.formulario-contacto{
+    @include mixin.flex-column;
+    width: 20%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* Estilo titulo secundario */
+/* Estilo de titulo de Nosotros */
+
+#h2-index{
+    @include mixin.estilo-h2;
+}
+
+#h2-nosotros{
+    @include mixin.estilo-h2;
+}
+
+/* Estilo de titulo Galeria */
+#h2-galeria{
+    @include mixin.estilo-h2;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(226, 215, 215);
+}
+
+/* Estilos de otras lineas de contacto */
+/* Estilo titulo direccion */
+/* Estilo titulo telefono */
+/* Estilo titulo mail */
+
+#h3-direccion, #h3-telefono, #h3-mail{
+    @include mixin.estilo-h3;
+}
+
+#p-mail, #p-telefono, #p-direccion{
+    @include mixin.parrafo-cont;
+}
+
+
+//Nesting en botones principales
+
+nav{
+    ul{
+        list-style: none;
+        text-transform: uppercase;
+        color: black;
+        font-size: 16px;
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
+
+
