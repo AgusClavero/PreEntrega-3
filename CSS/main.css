@@ -144,6 +144,10 @@ nav ul li a {
   color: black;
 }
 
+.img-mob {
+  width: 350px;
+}
+
 /* Estilos para Desktop Reservas */
 @media screen and (min-width: 1024px) {
   .formulario {
