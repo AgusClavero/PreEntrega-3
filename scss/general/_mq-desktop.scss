@@ -19,6 +19,10 @@ ul{
     color: rgb(73, 74, 75);
 }
 
+.img-mob{
+    width: 100%;
+}
+
 /* Estilo para Desktop Contacto */
 
 .formulario-contacto{
@@ -36,11 +40,12 @@ ul{
     font-size: 20px;
 }
 /* Estilos para Desktop Galeria */
-
+.img-tres{
+    display: none;
+}
 .main-galeria{
     display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 0fr;
+    grid-template-columns: 50% 50%;
 }
 /* Estilos para Desktop Nosotros */
 
