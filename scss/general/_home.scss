@@ -4,6 +4,9 @@
 // import mixin
 @use "../utilidades/mixin";
 
+body{
+    background-color: antiquewhite;
+}
 
 /* FlexBox en botones principales */
 
@@ -11,9 +14,9 @@
     display: flex;  /*Activa flexbox*/
     flex-direction: row;
     gap: 1rem;
-    padding: 5px;
+    padding: 0px;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .opciones{
@@ -50,7 +53,7 @@
 /* Estilo de formulario de reservas */
 .formulario{
     @include mixin.flex-column;
-    width: 50%;
+    width: 60%;
     padding: 5px;
     margin: 5px;
     font-size: 20px;
@@ -70,7 +73,7 @@
 
 .formulario-contacto{
     @include mixin.flex-column;
-    width: 20%;
+    width: 50%;
     padding: 5px;
     margin: 5px;
     font-size: 20px;
@@ -99,6 +102,13 @@
     background-color: rgb(226, 215, 215);
 }
 
+.main-galeria{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, 30%);
+
+}
+
 /* Estilos de otras lineas de contacto */
 /* Estilo titulo direccion */
 /* Estilo titulo telefono */
@@ -115,20 +125,20 @@
 
 //Nesting en botones principales
 
-nav{
-    ul{
-        list-style: none;
-        text-transform: uppercase;
-        color: black;
-        font-size: 16px;
-        li{
-            a{
-                text-decoration: none;
-                color: black;
-            }
-        }
-    }
-}
+    nav{
+        ul{
+          list-style: none;
+          text-transform: uppercase;
+          color: black;
+          font-size: 14px;
+             li{
+                  a{
+                       text-decoration: none;
+                       color: black;
+                   }
+               }
+         }
+       }
 
 
 
